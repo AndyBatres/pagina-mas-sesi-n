@@ -13,7 +13,7 @@ function Registro() {
         } else if (Usuario != "" && Contraseña != "") {
             alert("Usuario registrado correctamente");
             conf = false;
-            window.location.href = "reparacion_y_mantenimiento.html";
+            window.location.href = "reparacion_y_mantenimiendo.html";
         }
     }
 }
@@ -42,7 +42,7 @@ function Inicio() {
         }
         if (mensaje === "Bienvenido " + user) {
             alert(mensaje);
-            window.location.href = "reparacion_y_mantenimiento.html";
+            window.location.href = "reparacion_y_mantenimiendo.html";
         } else if (mensaje === "Usuario o contraseña incorrecta") {
             document.getElementById("mensaje").textContent = mensaje;
         }
