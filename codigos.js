@@ -1,0 +1,41 @@
+function Registro() {
+    let Usuario = document.getElementById("usuario").value;
+    let Contraseña = document.getElementById("password").value;
+    if (Usuario == "" && Contraseña == "") {
+        document.getElementById("mensaje").textContent = "Por favor, complete todos los campos.";
+    } else if (Usuario == "" && Contraseña != "") {
+        document.getElementById("mensaje").textContent = "Por favor, ingrese su nombre de usuario.";
+    } else if (Usuario != "" && Contraseña == "") {
+        document.getElementById("mensaje").textContent = "Por favor, ingrese su contraseña.";
+    } else if (Usuario != "" && Contraseña != "") {
+        document.getElementById("mensaje").textContent = "Registro exitoso. Bienvenido " + Usuario;
+    }
+}
+
+
+function Inicio() {
+    let usuarios = ["Admin", "admin", "yo"];
+    let contraseñas = ["1234", "4321", "5678"];
+
+    let user = document.getElementById("usuario").value;
+    let cont = document.getElementById("password").value;
+
+    if (user === "" && cont === "") {
+        document.getElementById("mensaje").textContent = "Por favor, complete todos los campos.";
+    } else if (user === "") {
+        document.getElementById("mensaje").textContent = "Por favor, ingrese su nombre de usuario.";
+    } else if (cont === "") {
+        document.getElementById("mensaje").textContent = "Por favor, ingrese su contraseña.";
+    } else {
+        let mensaje = "Usuario o contraseña incorrecta";
+
+        for (let i = 0; i < 3; i++) {
+            if (usuarios[i] === user && contraseñas[i] === cont) {
+                mensaje = "Bienvenido " + usuarios[i];
+                break;
+            }
+        }
+
+        document.getElementById("mensaje").textContent = mensaje;
+    }
+}
