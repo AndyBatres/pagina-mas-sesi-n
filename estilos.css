@@ -1,21 +1,108 @@
-body{
-    background:linear-gradient(to right,#ffd6ff, #e7c6ff, #c8b6ff, #b8c0ff, #bbd0ff);
+body {
+
+    background: linear-gradient(to right, #ffd6ff, #e7c6ff, #c8b6ff, #b8c0ff, #bbd0ff);
 }
-h1{
-    text-align:center;
-    color:#fff;
+
+h1 {
+    text-align: center;
+    color: #fff;
     font-family: 'Courier New', Courier, monospace;
 }
-h2{
-   color:white;  
-    font-family: 'Courier New', Courier, monospace; 
+
+h2 {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
 }
-    
-  .login-container{
-    background-color: #c8b6ff   ;
-  }  
-  div{
-    text-align:center;  
-  }
-  
-  
+
+.login-container {
+    background-color: #c8b6ff;
+}
+
+div {
+    text-align: center;
+}
+
+
+
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #25bac7;
+}
+
+h1 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    color: white;
+    background-color: #0a6b77;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+
+.Div_Principal {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    width: 100%;
+    height: 25%;
+    text-align: center;
+    justify-content: center;
+}
+
+.Div_Contenido {
+    background-color: white;
+    width: 50%;
+    padding: 20px;
+}
+
+.Div_Primer_Pregunta {
+    color: white;
+    background-color: #084048;
+    width: 100%;
+    height: 35px;
+    text-align: center;
+    justify-content: center;
+}
+
+.Div_Respuesta {
+    color: white;
+    background-color: #054f60;
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    justify-content: center;
+}
+
+.Div_Segunda_Pregunta {
+    color: white;
+    background-color: #3e808a;
+    width: 100%;
+    height: 35px;
+    text-align: center;
+    justify-content: center;
+}
+
+.Div_Respuesta2 {
+    color: white;
+    background-color: #48747e;
+    width: 100%;
+    height: 180px;
+    text-align: center;
+    justify-content: center;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}

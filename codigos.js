@@ -1,17 +1,22 @@
 function Registro() {
     let Usuario = document.getElementById("usuario").value;
     let Contraseña = document.getElementById("password").value;
-    if (Usuario == "" && Contraseña == "") {
-        document.getElementById("mensaje").textContent = "Por favor, complete todos los campos.";
-    } else if (Usuario == "" && Contraseña != "") {
-        document.getElementById("mensaje").textContent = "Por favor, ingrese su nombre de usuario.";
-    } else if (Usuario != "" && Contraseña == "") {
-        document.getElementById("mensaje").textContent = "Por favor, ingrese su contraseña.";
-    } else if (Usuario != "" && Contraseña != "") {
-        document.getElementById("mensaje").textContent = "Registro exitoso. Bienvenido " + Usuario;
+    let conf = true
+
+    while (conf) {
+        if (Usuario == "" && Contraseña == "") {
+            document.getElementById("mensaje").textContent = "Por favor, complete todos los campos.";
+        } else if (Usuario == "" && Contraseña != "") {
+            document.getElementById("mensaje").textContent = "Por favor, ingrese su nombre de usuario.";
+        } else if (Usuario != "" && Contraseña == "") {
+            document.getElementById("mensaje").textContent = "Por favor, ingrese su contraseña.";
+        } else if (Usuario != "" && Contraseña != "") {
+            alert("Usuario registrado correctamente");
+            conf = false;
+            window.location.href = "reparacion_y_mantenimiendo.html";
+        }
     }
 }
-
 
 function Inicio() {
     let usuarios = ["Admin", "admin", "yo"];
@@ -35,7 +40,11 @@ function Inicio() {
                 break;
             }
         }
-
-        document.getElementById("mensaje").textContent = mensaje;
+        if (mensaje === "Bienvenido " + user) {
+            alert(mensaje);
+            window.location.href = "reparacion_y_mantenimiendo.html";
+        } else if (mensaje === "Usuario o contraseña incorrecta") {
+            document.getElementById("mensaje").textContent = mensaje;
+        }
     }
 }
