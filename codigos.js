@@ -1,3 +1,5 @@
+let users = []
+let contr = []
 function Registro() {
     let Usuario = document.getElementById("usuario").value;
     let Contraseña = document.getElementById("password").value;
@@ -11,6 +13,8 @@ function Registro() {
         } else if (Usuario != "" && Contraseña == "") {
             document.getElementById("mensaje").textContent = "Por favor, ingrese su contraseña.";
         } else if (Usuario != "" && Contraseña != "") {
+            users.push(Usuario);
+            contr.push(Contraseña);
             alert("Usuario registrado correctamente");
             conf = false;
             window.location.href = "reparacion_y_mantenimiendo.html";
@@ -37,6 +41,12 @@ function Inicio() {
         for (let i = 0; i < 3; i++) {
             if (usuarios[i] === user && contraseñas[i] === cont) {
                 mensaje = "Bienvenido " + usuarios[i];
+                break;
+            }
+        }
+        for (let i = 0; i < users.length; i++) {
+            if (users[i] === user && contr[i] === cont) {
+                mensaje = "Bienvenido " + users[i];
                 break;
             }
         }
