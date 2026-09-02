@@ -1,3 +1,21 @@
 body{
-    background:linear-gradient(to right, c5cbd3)
+    background:linear-gradient(to right,#ffd6ff, #e7c6ff, #c8b6ff, #b8c0ff, #bbd0ff);
 }
+h1{
+    text-align:center;
+    color:#fff;
+    font-family: 'Courier New', Courier, monospace;
+}
+h2{
+   color:white;  
+    font-family: 'Courier New', Courier, monospace; 
+}
+    
+  .login-container{
+    background-color: #c8b6ff   ;
+  }  
+  div{
+    text-align:center;  
+  }
+  
+  
