@@ -40,7 +40,11 @@ function Inicio() {
                 break;
             }
         }
-
-        document.getElementById("mensaje").textContent = mensaje;
+        if (mensaje === "Bienvenido " + user) {
+            alert(mensaje);
+            window.location.href = "reparacion_y_mantenimiento.html";
+        } else if (mensaje === "Usuario o contraseña incorrecta") {
+            document.getElementById("mensaje").textContent = mensaje;
+        }
     }
 }
