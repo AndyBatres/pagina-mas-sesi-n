@@ -1,0 +1,48 @@
+#titulo {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+#titulo hr {
+    width: 40%;
+    margin: auto;
+    border: 1px solid #0004ff;
+}
+
+#caja {
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+    gap: 20px;
+}
+
+#pregunta {
+    width: 45%;
+    border: 3px solid #000000;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#codigos {
+    width: 45%;
+    border: 3px solid #000000;
+    border-radius: 5px;
+    margin-left: 20px;
+    text-align: center;
+}
+.titulos {
+    background-color: #6063ffc4;
+    color: white;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+}
+.margen {
+    margin: 10px;
+}
+.info{
+    background-color: #7e90f3c4;
+    color: white;
+    margin: 10px;
+    padding: 20px;
+    padding-bottom: 10px;
+}
